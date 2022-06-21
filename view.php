@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
     <title>掲示板 v06 MySQL</title>
+
+<?php require_once("iframe-css.php") ?>
     <link rel="stylesheet" href="client.css?_=<?= time() ?>">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<?php require_once("iframe-css.php") ?>
 
 <script>
 
@@ -39,7 +40,10 @@ $( function(){
 
 <body>
 <div id="bbs">
-    <h3 class="alert alert-primary"><a href="control.php" style="color:black;">掲示板 ( MySQL )</a></h3>
+    <h3 class="alert alert-primary">
+        <a href="control.php" style="color:black;">掲示板 ( MySQL )</a>
+        <a href=".." style="float:right;text-decoration:none;">📂</a>
+    </h3>
     <div id="content"
         >
         <form action=""
